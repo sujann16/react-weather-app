@@ -1,0 +1,11 @@
+.infoBox{
+    text-align: center;
+    
+}
+
+.card-component{
+    display: flex;
+    
+    justify-content: center;
+     
+}
