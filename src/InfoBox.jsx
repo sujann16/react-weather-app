@@ -9,27 +9,27 @@ import SunnyIcon from '@mui/icons-material/Sunny';
 
 export default function infoBox({info}) {
 let HOT_URL= "https://images.unsplash.com/photo-1525490829609-d166ddb58678?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c3VufGVufDB8fDB8fHww";
-let COLD_URL="src/assets/cold.avif"
-let RAIN_URL="src/assets/rain2.avif";
+let COLD_URL="https://plus.unsplash.com/premium_photo-1675271988124-55694ef43fd4?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y29sZHxlbnwwfHwwfHx8MA%3D%3D"
+let RAIN_URL="https://images.unsplash.com/photo-1646277586472-6d5600854899?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmFpbnklMjBuaWdodHxlbnwwfHwwfHx8MA%3D%3D";
     return (
         <div className="infoBox">
             <div className="card-component">
              <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         sx={{ height: 140 }}
-        image={info.temp > 15 ? info.humidity > 70 ? RAIN_URL :   HOT_URL : COLD_URL}
+        image={info.temp > 15 ? info.humidity > 80 ? RAIN_URL :   HOT_URL : COLD_URL}
         title="green iguana"
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
           {info.city}
           &nbsp;
-          {info.humidity > 70 ? <ThunderstormIcon/>: info.temp > 15 ? <SunnyIcon/>:<AcUnitIcon/>}
+          {info.temp > 15 ? info.temp > 15 ? <ThunderstormIcon/> : <SunnyIcon/> : <AcUnitIcon/>}
           
         </Typography>
         <Typography variant="body2" sx={{ color: 'text.secondary' }} component={"span"}>
           <div>
-            <p>Temperatur = {info.temp}&deg;C</p>
+            <p>Temperature = {info.temp}&deg;C</p>
             <p>Humidity = {info.humidity}</p>
             <p>Max temp = {info.max_temp}</p>
             <p>Min temp = {info.min_temp}</p>
