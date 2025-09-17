@@ -18,7 +18,7 @@ let RAIN_URL="https://images.unsplash.com/photo-1646277586472-6d5600854899?w=900
       <CardMedia
         sx={{ height: 140 }}
         image={info.temp > 15 ? info.humidity > 80 ? RAIN_URL :   HOT_URL : COLD_URL}
-        title="green iguana"
+        title="weather image"
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
