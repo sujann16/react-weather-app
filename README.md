@@ -40,7 +40,8 @@ Search for any city worldwide and get live weather updates including temperature
     4.	Run the development server:
       npm run dev
 
-screenshots: <img width="1470" height="956" alt="Screenshot 2026-01-08 at 20 35 37" src="https://github.com/user-attachments/assets/d7b5e78a-3c9e-44d2-adcd-c1099909a12f" />
+screenshots: <img width="489" height="716" alt="Screenshot 2026-01-08 at 22 25 08" src="https://github.com/user-attachments/assets/3d4377ae-9862-4981-a4a6-fc90f94540a5" />
+
 
 
 
